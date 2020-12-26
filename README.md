@@ -2,8 +2,7 @@
 A first of a kind Indain traffic sign detector and classifier
 
 ## Dataset used:
-1. *Russian Traffic Sign Dataset (RTSD)* 
-A dataset for training and testing of traffic sign recognition algorithms. It contains:
+1. *Russian Traffic Sign Dataset (RTSD)* - 
 * 179138 labelled frames,
 * 156 sign classes,
 * 15630 physical signs,
@@ -24,5 +23,8 @@ There are 2 main approaches based on
 minimizing triplet loss function. After getting optimal weights, embedding of 1 image of each class was saved, now test image's L2 distance is calculated, 
 and the nearest embedding's label is the prediction.
 2. Using CNN: Training a CNN on the similar looking traffic signs of various other countries, and using ImgAug library to improve further accuracy.
+## Detection + Classification on Video:
+- The Idea is to process each frame using through a YOLO network, getting ROI of traffic sign, followed by feeding it to the classification model.
+- OpenCV deep neural network library was used to import YOLO model, feeding to it the weights of YOLOv3 trained in darknet.
 
-
+** Using Colab GPU's the model performed at an average rate of 60 fps giving a classification accuracy of ~80%.** 
