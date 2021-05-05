@@ -64,5 +64,5 @@ list of frameworks with hyperlink/boxes
 - OpenCV deep neural network library was used to import YOLO model, feeding to it the weights of YOLOv3 trained in darknet.
 
 ### Results
-
+** Speed of detection should be around 50 ms if everything works right with opencv gpu enabled
 ** Using Colab GPU's the model performed at an average rate of 60 fps giving a classification accuracy of ~80%.** 
