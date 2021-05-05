@@ -1,4 +1,5 @@
-# DetectSignNet
+# DeepTrafficSignDNC- Traffic Sign Detection and Classification
+
 
 ## Dataset used:
 
