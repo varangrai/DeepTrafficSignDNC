@@ -1,5 +1,5 @@
 # TrafficSignNet
-A first of a kind Indain traffic sign detector.
+A first of a kind Indian traffic sign detector.
 
 ## Dataset used:
 1. *Russian Traffic Sign Dataset (RTSD)* - 
